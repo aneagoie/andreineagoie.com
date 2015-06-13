@@ -1,0 +1,711 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/* SlideoutMenu */
+.cbp-spmenu {
+  background: #47a3da;
+  position: fixed;
+}
+
+.cbp-spmenu h3 {
+  color: #afdefa;
+  font-size: 1.9em;
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+  background: #0d77b6;
+}
+
+.topsy {
+  display: inline-block;
+  font-size: 2em;
+  width: 49%;
+
+}
+
+
+.cbp-spmenu a {
+  display: block;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+  background: #258ecd;
+}
+
+.cbp-spmenu a:active {
+  background: #afdefa;
+  color: #47a3da;
+  text-decoration: none
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+  width: 200px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+  border-bottom: 1px solid #258ecd;
+  padding: 1em;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+  left: -200px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+  left: 0px;
+}
+
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+  .cbp-spmenu-horizontal {
+    font-size: 75%;
+    height: 110px;
+  }
+
+  .cbp-spmenu-top {
+    top: -110px;
+  }
+
+  .cbp-spmenu-bottom {
+    bottom: -110px;
+  }
+
+}
+
+@media screen and (max-height: 26.375em){
+
+  .cbp-spmenu-vertical {
+    font-size: 90%;
+    width: 190px;
+  }
+
+  .cbp-spmenu-left {
+    left: -190px;
+  }
+}
+
+/* General Demo Style */
+
+body, html { font-size: 100%;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+
+}
+
+a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.main > section {
+  max-width: 360px;
+  width: 90%;
+  position: absolute;
+  z-index: 111;
+
+}
+
+.skill {
+  font-size: 30px;
+  font-family: "Lato";
+  color: white;
+  margin-top: -10px;
+}
+.main > section button {
+  border: none;
+  background: #47a3da;
+  color: #fff;
+  padding: 1em;
+  display: inline-block;
+  width: 20%;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 1em;
+  outline: 0;
+  border-radius: 0 10% 10% 0;
+
+  -webkit-box-shadow: 0 10px 10px #777;
+  -moz-box-shadow: 0 10px 10px #777;
+  box-shadow: 0 10px 10px #777;
+
+}
+.main > section button span {
+
+  font-size: 3em;
+  text-align: center;
+
+}
+.main > section button:hover {
+  background: #258ecd;
+}
+
+.main > section button.active {
+  background: #0d77b6;
+
+}
+
+
+.main > section button.disabled {
+  background: #aaa;
+  pointer-events: none;
+}
+
+
+.social__icon--google:hover {
+    background-color: #dd4b39
+}
+.social__icon--google:hover a {
+    color: #ffffff
+}
+.social__icon--twitter:hover {
+    background-color: #55acee
+}
+.social__icon--twitter:hover a {
+    color: #ffffff
+}
+
+.social__icon--linkedin:hover {
+    background-color: #1483ba
+}
+.social__icon--linkedin:hover a {
+    color: #ffffff
+}
+
+.socialnav:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.socialnav a {
+    float: left;
+    color: rgba(255, 255, 255, 0.8);
+    width: 33%;
+    text-align: center;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    border-right: solid 1px rgba(255, 255, 255, 0.1);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out
+}
+.socialnav a:last-child {
+
+}
+.socialnav a {
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 20px;
+
+
+}
+
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    background: url("/images/art.jpg") center center no-repeat;
+    background-size: cover;
+
+
+}
+.intro .intro__content h1,
+.intro .intro__content h2 {
+
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+}
+@media (max-width: 767px) {
+    .intro .intro__content {
+        margin-top: -80px
+    }
+
+}
+.intro .intro__content h1 {
+    opacity: 1;
+    -webkit-animation: bouncey 1100ms linear both;
+    animation: bouncey 1100ms linear both
+}
+.intro .intro__content h2 {
+    opacity: 1;
+    -webkit-animation: bouncey 800ms linear both;
+    animation: bouncey 800ms linear both;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s
+}
+.intro h1,
+.intro h2 {
+    text-transform: uppercase
+}
+.intro h1 {
+    font-size: 72px;
+    line-height: 72px;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 900;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08)
+}
+@media (max-width: 767px) {
+    .intro h1 {
+        font-size: 36px;
+        text-align: center
+    }
+}
+.intro h2 {
+    font-size: 34px;
+    line-height: 15px;
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: 200;
+    background: #47a3da;
+}
+@media (max-width: 767px) {
+    .intro h2 {
+        font-size: 24px;
+        text-align: center
+    }
+}
+
+.tip-right + .tooltip > .tooltip-inner {
+  background-color: #47a3da;
+  font-size: 14px;
+  line-height: 15px;
+  margin: 0;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: 200;
+  text-transform: uppercase
+}
+.tip-right + .tooltip > .tooltip-arrow {
+  border-right-color: #47a3da;
+   }
+
+/*See My Work Page*/
+/* The 1140px Grid by Andy Taylor – http://cssgrid.net – http://www.twitter.com/andytlr – http://www.catchingzebra.com */
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+  margin-right: 3.8%;
+  float: left;
+}
+
+.onecol {
+  width: 4.85%;
+}
+
+.twocol {
+  width: 13.5%;
+}
+
+.threecol {
+  width: 22.15%;
+}
+
+.fourcol {
+  width: 30.8%;
+}
+
+.fivecol {
+  width: 39.45%;
+}
+
+.sixcol {
+  width: 48.1%;
+}
+
+.sevencol {
+  width: 56.75%;
+}
+
+.eightcol {
+  width: 65.4%;
+}
+
+.ninecol {
+  width: 74.05%;
+}
+
+.tencol {
+  width: 82.7%;
+}
+
+.elevencol {
+  width: 91.35%;
+}
+
+.twelvecol {
+  width: 100%;
+  float: left;
+}
+
+.last {
+  margin-right: 0px;
+}
+
+img, object, embed {
+  max-width: 100%;
+}
+
+/*seework section*/
+
+.centered {
+  text-align: center;
+}
+
+#header {
+  background: #463a4e;
+  color: #9e92a6;
+}
+
+#header span {
+  color: #eee;
+  font-weight: 600;
+}
+
+#work {
+  background: #ddd;
+  text-shadow: 0 1px 0 #eee;
+  overflow: hidden;
+  line-height: 0;
+  padding-top: 18px;
+  border-top: 1px solid #392e41;
+  border-bottom: 1px solid #392e41;
+}
+
+
+
+::-moz-selection {
+  background:#f75555;
+  color:#eee;
+  text-shadow: 0 -1px 0 #a90404;
+}
+
+::selection {
+  background: #f75555;
+  color:#eee;
+  text-shadow: 0 -1px 0 #a90404;
+}
+
+div.image {
+  position: relative;
+  display: block;
+  margin: 0 auto 36px;
+  padding: 1px 0;
+  max-width: 365px;
+  overflow: hidden;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+div.image img {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 8px;
+  margin-bottom: 0;
+  overflow: hidden;
+  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7), 0 -1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7), 0 -1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7), 0 -1px 1px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+div.caption,
+div.image:active div.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #eee;
+  overflow: hidden;
+  background-color: rgba(70,54,81,.9);
+  background-color: rgba(226,46,47,.9);
+  background-color: rgba(7,117,181,.9);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 8px;
+  opacity: 0;
+  -webkit-transition: opacity .4s ease-out;
+  -moz-transition: opacity .4s ease-out;
+  -o-transition: opacity .4s ease-out;
+  transition: opacity .4s ease-out;
+}
+
+div.image:hover div.caption {
+  opacity: 1;
+}
+
+
+div.caption,
+div.image:active div.caption {
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  -webkit-transform: translate3d(-366px, 0, -60px);
+  opacity: 0;
+}
+
+div.image:hover div.caption {
+  -webkit-transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+
+.caption h3 {
+  font-size: 22px;
+  line-height: 23px;
+  padding: 12px 12px 0;
+  margin-bottom: 12px;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+  text-align: left;
+  cursor: default;
+}
+
+.browserhint h3,
+.mobilehint h3 {
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  color: #615768;
+}
+
+.mobilehint {
+  display: none;
+}
+
+
+body {
+  font-size: 0.8em; /* Makes type a bit smaller at 1024 so layout doesn't look unbalanced */
+  line-height: 1.5em; /* As above */
+}
+
+
+/*Main Page Skills flash card*/
+
+span.flash {
+    background: #ecd018;
+    padding: 1px 1px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+span.flash i {
+    visibility: hidden;
+}
+span.flash span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: red;
+    transition: top 0.2s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    line-height: 50px;
+}
+span.flash span:first-child {
+    display: inline;
+    z-index: 1;
+}
+span.flash:hover,
+span.flash.open {
+    background: none;
+}
+span.flash:hover span,
+span.flash.open span {
+    transition: all 0.2s;
+    top: auto;
+}
+span.flash:hover span.designer,
+span.flash.open span.designer {
+    top: -96px;
+    -webkit-transform: perspective(100px) rotateX(20deg);
+    transform: perspective(100px) rotateX(20deg);
+}
+span.flash:hover span.developer,
+span.flash.open span.developer {
+    top: -44px;
+    -webkit-transform: perspective(100px) rotateX(-20deg);
+    transform: perspective(100px) rotateX(-20deg);
+}
+span.flash:hover span.entrepreneur,
+span.flash.open span.entrepreneur {
+    -webkit-transform: perspective(100px) rotateX(20deg);
+    transform: perspective(100px) rotateX(20deg);
+    top: 0;
+}
+span.flash:hover span.speaker,
+span.flash.open span.speaker {
+    top: 52px;
+    -webkit-transform: perspective(100px) rotateX(-20deg);
+    transform: perspective(100px) rotateX(-20deg);
+}
+span.flash:hover span.teacher,
+span.flash.open span.teacher {
+    -webkit-transform: perspective(200px) rotateX(40deg);
+    transform: perspective(200px) rotateX(40deg);
+    top: 92px;
+}
