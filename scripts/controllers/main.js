@@ -9,6 +9,7 @@
  */
 angular.module('andreineagoie1App')
   .controller('MainCtrl', function ($scope) {
+
      $scope.initSlider = function () {
 
         var last = $('span.flash span:first');
