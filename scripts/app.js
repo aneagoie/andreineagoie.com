@@ -38,6 +38,11 @@ angular
   var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
     showLeft = document.getElementById( 'showLeft' ),
     hidemenu = document.getElementById( 'showLef'),
+    hidemenu2 = document.getElementById('showLef2'),
+    hidemenu3 = document.getElementById('showLef3'),
+    hidemenu4 = document.getElementById('showLef4'),
+    hidemenu5 = document.getElementById('showLef5'),
+
     body = document.body;
 
   showLeft.onclick = function() {
@@ -47,6 +52,30 @@ angular
     classie.remove(this, 'active' );
   };
   hidemenu.onclick = function() {
+    classie.toggle( this, 'active' );
+    classie.toggle( menuLeft, 'cbp-spmenu-open' );
+    disableOther( 'showLeft' );
+
+  };
+   hidemenu2.onclick = function() {
+    classie.toggle( this, 'active' );
+    classie.toggle( menuLeft, 'cbp-spmenu-open' );
+    disableOther( 'showLeft' );
+
+  };
+    hidemenu3.onclick = function() {
+    classie.toggle( this, 'active' );
+    classie.toggle( menuLeft, 'cbp-spmenu-open' );
+    disableOther( 'showLeft' );
+
+  };
+    hidemenu4.onclick = function() {
+    classie.toggle( this, 'active' );
+    classie.toggle( menuLeft, 'cbp-spmenu-open' );
+    disableOther( 'showLeft' );
+
+  };
+    hidemenu5.onclick = function() {
     classie.toggle( this, 'active' );
     classie.toggle( menuLeft, 'cbp-spmenu-open' );
     disableOther( 'showLeft' );

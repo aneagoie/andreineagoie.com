@@ -162,6 +162,9 @@ body {
 
 
 }
+.icon {
+  text-align: center;
+}
 
 
 #showLef {
@@ -225,12 +228,12 @@ body, html { font-size: 100%;}
 }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-family: Calibri;
     color: #47a3da;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 
-
+/*Lato Calibri Arial, sans-serif*/
 }
 
 a {
@@ -253,7 +256,7 @@ a:hover {
 
 .skill {
   font-size: 30px;
-  font-family: 'Lato';
+  font-family: Calibri;
   color: white;
   margin-top: -10px;
 }
@@ -299,10 +302,10 @@ a:hover {
 }
 
 
-.social__icon--google:hover {
+.social__icon--github:hover {
     background-color: #dd4b39
 }
-.social__icon--google:hover a {
+.social__icon--github:hover a {
     color: #ffffff
 }
 .social__icon--twitter:hover {
@@ -377,12 +380,13 @@ a:hover {
 .contact h1 {
     font-size: 72px;
     text-align: center;
-    line-height: 72px;
+    line-height: 80px;
     margin: 0 30%;
     color: #ffffff;
     font-weight: 900;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     background: #47a3da;
+
 }
 @media (max-width: 767px) {
     .contact h1 {
@@ -392,20 +396,21 @@ a:hover {
 }
 .contact h2 {
     font-size: 34px;
-    padding: 10px;
+    padding: 15px;
     color: black;
     font-weight: 200;
 
 }
 .contact p {
     font-size: 24px;
-    padding: 10px;
+    padding: 15px;
     color: black;
     font-weight: 200;
 
 }
 .contact h2 span {
-  background: red;
+  background-color:rgba(255,0,0,0.5);
+
 }
 
 .intro .intro__content h1,
@@ -710,7 +715,7 @@ span.flash {
     width: 200px;
     text-align: center;
     position: relative;
-    font-family: 'Lato';
+    font-family: Calibri;
 }
 span.flash i {
     visibility: hidden;
@@ -782,3 +787,25 @@ span.flash.open span.bootstrap {
     transform: perspective(200px) rotateX(-40deg);
     top: 134px;
 }
+
+.round {
+  border-radius: 100%;
+  padding: 20px;
+  padding-bottom: 0px;
+  width: 30%;
+}
+ul {
+  list-style-type: circle;
+}
+.col-md-4 ul li {
+  text-align: center;
+  padding: 5px;
+  color: black;
+  font-size: 2em;
+
+  margin:0;
+}
+
+
+
+
