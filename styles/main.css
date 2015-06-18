@@ -230,7 +230,7 @@ body, html { font-size: 100%;}
 }
 
 body {
-    font-family: Calibri;
+    font-family: Calibri, sans-serif;
     color: #47a3da;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
@@ -256,9 +256,10 @@ a:hover {
 
 }
 
+
 .skill {
   font-size: 30px;
-  font-family: Calibri;
+  font-family: Calibri, sans-serif;
   color: white;
   margin-top: -10px;
 }
@@ -375,6 +376,12 @@ a:hover {
     transition: all 1s ease-in-out;
 
 }
+@media (max-width: 767px) {
+    .contact .email {
+        font-size: 70%;
+    }
+
+}
 .contact h1, .contact h2 {
 -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out
@@ -383,7 +390,7 @@ a:hover {
     font-size: 72px;
     text-align: center;
 
-    margin: 0 30%;
+    margin: 0 20%;
     color: #ffffff;
     font-weight: 900;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -455,7 +462,7 @@ h4 span a{
 }
 .intro h1 {
     font-size: 72px;
-    line-height: 72px;
+    /*line-height: 72px;*/
     margin: 0;
     color: #ffffff;
     font-weight: 900;
@@ -724,9 +731,10 @@ span.flash {
     width: 200px;
     text-align: center;
     position: relative;
-    font-family: Calibri;
+    font-family: Calibri, sans-serif;
 }
 span.flash i {
+
     visibility: hidden;
 }
 span.flash span {

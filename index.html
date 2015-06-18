@@ -25,7 +25,8 @@
     <main id="panel">
       <div class="main">
         <section>
-          <button id="showLeft" class="tip-right" data-toggle="tooltip" data-placement="right" data-original-title="See My Work" ><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+          <!-- Add tooltip: class="tip-right" data-toggle="tooltip" data-placement="right" data-original-title="See My Work"  -->
+          <button id="showLeft" ><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
         </section>
       </div>
     </main>
@@ -47,7 +48,7 @@
     </nav>
 
     <!-- Views of different pages -->
-    <div ng-view=""></div>
+    <div ng-view="" autoscroll="true"></div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
