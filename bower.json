@@ -1,0 +1,30 @@
+{
+  "name": "andreineagoie.com",
+  "description": "My portfolio website using Angular.js",
+  "main": "index.js",
+  "authors": [
+    "Andrei <aneagoie1@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/aneagoie/andreineagoie.com",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "jquery": "^2.2.3",
+    "angular-route": "^1.5.5",
+    "bootstrap": "^3.3.6",
+    "angular-animate": "^1.5.5",
+    "angular-resource": "^1.5.5",
+    "classie": "^1.0.1",
+    "angular-touch": "^1.5.5",
+    "font-awesome": "fontawesome#^4.6.1"
+  }
+}

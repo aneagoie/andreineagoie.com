@@ -2,21 +2,30 @@
 <html class="no-js" ng-app="andreineagoie1App">
   <head>
     <meta charset="utf-8">
-    <title>Hi, I'm Andrei Neagoie | Web Developer</title>
-    <meta name="description" content="Andrei Neagoie is a Web Developer based out of Toronto. He makes cool web applications">
+    <title>Hi, I'm Andrei Neagoie | Software Developer</title>
+    <meta name="description" content="Andrei Neagoie is a software developer based out of Toronto. He makes cool stuff for nice people">
     <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
   </head>
   <body >
+
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -38,7 +47,8 @@
       <li class="active"><a ng-href="#/" id="showLef2">Home</a></li>
       <li><a ng-href="#/about" id="showLef3">About</a></li>
       <li><a ng-href="#/seeWork" id="showLef4">See My Work</a></li>
-      <li><a ng-href="#/contact" id="showLef5">Contact</a></li>
+      <li><a ng-href="#/play" id="showLef5">Play</a></li>
+      <li><a ng-href="#/contact" id="showLef6">Contact</a></li>
       <div class="socialnav">
         <a class="social__icon--linkedin" target="_blank" ng-href="https://ca.linkedin.com/in/andreineagoie"><i class="fa fa-linkedin-square fa-2x"></i></a>
         <a class="social__icon--twitter" target="_blank" ng-href="https://twitter.com/andreineagoie/"><i class="fa fa-twitter fa-2x"></i></a>
@@ -46,21 +56,8 @@
       </div>
 
     </nav>
-
     <!-- Views of different pages -->
     <div ng-view="" autoscroll="true"></div>
-
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -75,11 +72,16 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/seeWork.js"></script>
+    <script src="scripts/controllers/play.js"></script>
+    <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/sketch.min.js"></script>
+    <script src="scripts/particle.js"></script>
+    <!-- endbuild -->
 
 </body>
 </html>

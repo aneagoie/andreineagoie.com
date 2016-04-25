@@ -9,6 +9,8 @@
  */
 angular.module('andreineagoie1App')
   .controller('MainCtrl', function ($scope) {
+    var el = document.querySelectorAll('canvas');
+    el[0].style.display = '';
 
      $scope.initSlider = function () {
 

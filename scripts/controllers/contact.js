@@ -9,9 +9,6 @@
  */
 angular.module('andreineagoie1App')
   .controller('ContactCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    var el = document.querySelectorAll('canvas');
+    el[0].style.display = '';
   });

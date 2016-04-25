@@ -24,6 +24,10 @@ angular
         templateUrl: 'views/seeWork.html',
         controller: 'SeeWorkCtrl'
       })
+      .when('/play', {
+        templateUrl: 'views/play.html',
+        controller: 'PlayCtrl'
+      })
       .when('/contact', {
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl'
@@ -42,6 +46,7 @@ angular
     hidemenu3 = document.getElementById('showLef3'),
     hidemenu4 = document.getElementById('showLef4'),
     hidemenu5 = document.getElementById('showLef5'),
+    hidemenu6 = document.getElementById('showLef6'),
 
     body = document.body;
 
@@ -77,6 +82,12 @@ angular
 
   };
     hidemenu5.onclick = function() {
+    classie.toggle( this, 'active' );
+    classie.toggle( menuLeft, 'cbp-spmenu-open' );
+    disableOther( 'showLeft' );
+
+  };
+    hidemenu6.onclick = function() {
     classie.toggle( this, 'active' );
     classie.toggle( menuLeft, 'cbp-spmenu-open' );
     disableOther( 'showLeft' );
